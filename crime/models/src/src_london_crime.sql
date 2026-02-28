@@ -8,6 +8,7 @@ select
     minor_category as minor_crime_category,
     value,
     year,
-    month
+    month,
+    current_date() as entry_date 
 from 
     london_crime
